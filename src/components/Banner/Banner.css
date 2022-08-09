@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap");
+
+.banner_container {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  font-family: "Montserrat", sans-serif;
+  /* padding: 5%; */
+  position: relative;
+}
+
+.banner_container .bannner_movie_details{
+  padding: 5%;
+}
+
+.banner_container .bannner_movie_title {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-family: "Roboto Mono", monospace;
+}
+
+.banner_container .bannner_movie_desc {
+  font-size: 1.2rem;
+  width: 50%;
+}
+
+.banner_container .banner_btn {
+  margin-top: 80px;
+}
+
+.banner_container .banner_btn .btn {
+  height: 48px;
+  width: 150px;
+  border: none;
+  margin-right: 2.5rem;
+  font-size: 1.2rem;
+  border-radius: 0.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+}
+
+.banner_container .banner_btn i {
+  padding: 0 8px;
+}
+
+.banner_container .banner_btn .btn1 {
+  background-color: #fff;
+}
+
+.banner_container .banner_btn .btn2 {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+.banner_container .banner_btn .btn2:hover {
+  background: #fff;
+  border: none;
+  color: #000;
+}
+
+.banner_container .fade{
+  height: 5rem;
+  width: 100%;
+  background: linear-gradient(180deg,transparent,rgb(0,0,0,0.5),rgb(0,0,0,1));
+  position: absolute;
+  bottom: 0;
+}
+
+@media screen and (max-width: 750px) {
+  .banner_container {
+    height: 60vh;
+    padding-top: 40px;
+  }
+
+  .banner_container .bannner_movie_title {
+    font-size: 2rem;
+  }
+
+  .banner_container .bannner_movie_desc {
+    font-size: .9rem;
+    width: 100%;
+  }
+  .banner_container .banner_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .banner_container .banner_btn .btn {
+    height: 40px;
+    width: 120px;
+    font-size: 1rem;
+  }
+}
